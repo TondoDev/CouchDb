@@ -78,6 +78,12 @@ curl -s -u $LOGGED \
     ]
   }'
 
+echo "List of all documents"
+curl -s -u $LOGGED \
+  -H 'Accept: application/json' \
+  -X GET $INSTANCE/_all_docs
+
+
 echo "Creating wiew with map function with name - PUT is important here"
 curl -s -u $LOGGED \
   -H 'Content-type: application/json' \
