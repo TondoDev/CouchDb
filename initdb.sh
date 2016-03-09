@@ -85,19 +85,11 @@ curl -s -u $LOGGED \
 
 
 echo "Creating wiew with map function with name - PUT is important here"
-curl -s -u $LOGGED \
+curl -v -u $LOGGED \
   -H 'Content-type: application/json' \
   -X PUT $INSTANCE/_design/songs \
-  -d '
-  {
-    "language": "javascript",
-    "views": {
-      "tracks": {
-        "map": "function(doc) { if(doc.title && doc.songs) {emit(doc.title, doc.songs.length)}}"
-      }
-    }
-  }
-'
+  -d @designDoc.txt
+
 echo "Calling view - shoud display count of purchased songs in albums"
 curl -s -u $LOGGED \
   -H 'Content-type: application/json' \

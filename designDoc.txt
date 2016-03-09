@@ -1,0 +1,12 @@
+{
+  "language": "javascript",
+  "views": {
+    "tracks": {
+      "map": "function(doc) {
+          if(doc.title && doc.songs) {
+            emit(doc.title, doc.songs.length)
+          }
+        }"
+    }
+  }
+}
