@@ -1,10 +1,5 @@
-# Drop DB, if not exists som error is returned
-HOST=127.0.0.1:5984
-DBNAME=music
-INSTANCE=$HOST/$DBNAME
-USER=tondodev
-PWD=tondodev
-LOGGED=$USER:$PWD
+# load login info
+source loginInfo.txt
 
 echo Working with database $INSTANCE
 
