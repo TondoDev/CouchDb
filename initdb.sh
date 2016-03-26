@@ -1,4 +1,5 @@
 # load login info
+DBNAME=music
 source loginInfo.txt
 
 echo Working with database $INSTANCE
