@@ -1,0 +1,17 @@
+{
+  "language": "javascript",
+  "views": {
+    "countByName": {
+      "map": "function(doc) {emit([doc.name, doc.city], doc.sales)}",
+      "reduce" : "_count"
+    },
+    "sumByName": {
+      "map": "function(doc) {emit([doc.name, doc.city], doc.sales)}",
+      "reduce" : "_sum"
+    },
+    "statsByName": {
+      "map": "function(doc) {emit([doc.name, doc.city], doc.sales)}",
+      "reduce" : "_stats"
+    }
+  }
+}
