@@ -1,0 +1,26 @@
+[
+  {
+    "name" : "Bratislva",
+    "votersCoef" : 1
+  },
+  {
+    "name" : "Trnava",
+    "votersCoef" : 0.4
+  },
+  {
+    "name" : "Malacky",
+    "votersCoef" : 0.36
+  },
+  {
+    "name" : "Žilina",
+    "votersCoef" : 0.65
+  },
+  {
+    "name" : "Košice",
+    "votersCoef" : 0.89
+  },
+  {
+    "name" : "Prešov",
+    "votersCoef" : 0.7
+  }
+]

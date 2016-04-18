@@ -1,0 +1,62 @@
+[
+  {
+    "name" : "Zelená strana",
+    "members" : [
+      {
+        "name" : "Peter",
+        "surname" : "Slovák",
+        "gender" : "M",
+        "birth" : "1980-05-14",
+        "chairman" : true
+      },
+      {
+        "name" : "Ivan",
+        "surname" : "Hruška",
+        "gender" : "M",
+        "birth" : "1983-11-25"
+      },
+      {
+        "name" : "Lucia",
+        "surname" : "Pobehlá",
+        "gender" : "F",
+        "birth" : "1988-01-09"
+      },
+      {
+        "name" : "Katarína",
+        "surname" : "Smutná",
+        "gender" : "F",
+        "birth" : "1975-01-22"
+      }
+    ]
+  },
+  {
+    "name" : "Strana zelených",
+    "members" : [
+      {
+        "name" : "Pavlína",
+        "surname" : "Rohožková",
+        "gender" : "F",
+        "birth" : "1985-07-09",
+        "chairman" : true
+      },
+      {
+        "name" : "Petra",
+        "surname" : "Papúchová",
+        "gender" : "F",
+        "birth" : "1984-07-24"
+      },
+      {
+        "name" : "Romana",
+        "surname" : "Fekete",
+        "gender" : "F",
+        "birth" : "1960-12-17"
+      },
+      {
+        "name" : "Karol",
+        "surname" : "Fekete",
+        "gender" : "M",
+        "birth" : "1958-03-17"
+      },
+    ]
+  }
+]
