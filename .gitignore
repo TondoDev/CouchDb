@@ -1,1 +1,5 @@
 learning/tmp.sh
+loader/target/
+loader/.settings/
+loader/.classpath
+loader/.project
