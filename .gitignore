@@ -1,5 +1,5 @@
 learning/tmp.sh
-loader/target/
-loader/.settings/
-loader/.classpath
-loader/.project
+**/loader/target/
+**/loader/.settings/
+**/loader/.classpath
+**/loader/.project
