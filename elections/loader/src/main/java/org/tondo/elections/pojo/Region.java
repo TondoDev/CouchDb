@@ -15,18 +15,23 @@ public class Region {
 		return name;
 	}
 
-	public void setName(String name) {
-		this.name = name;
-	}
+//	public void setName(String name) {
+//		this.name = name;
+//	}
 
 	public Double getVotersCoef() {
 		return votersCoef;
 	}
 
-	public void setVotersCoef(Double votersCoef) {
-		this.votersCoef = votersCoef;
-	}
+//	public void setVotersCoef(Double votersCoef) {
+//		this.votersCoef = votersCoef;
+//	}
 	
+	
+	@Override
+	public String toString() {
+		return "Name: " + name + " Coef: " + votersCoef;
+	}
 	
 
 }
