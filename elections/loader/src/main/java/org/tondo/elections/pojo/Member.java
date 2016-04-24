@@ -15,6 +15,21 @@ public class Member {
 	private boolean chairman;
 	private String gender;
 	
+	/**
+	 * For deserialization tools
+	 */
+	public Member() {
+		
+	}
+	
+	public Member(String name, String surname, Date birthDate, String gender, boolean chairman) {
+		this.name = name;
+		this.surname = surname;
+		this.birth = (Date) birthDate.clone();
+		this.gender = gender;
+		this.chairman = chairman;
+	}
+	
 	public String getName() {
 		return name;
 	}

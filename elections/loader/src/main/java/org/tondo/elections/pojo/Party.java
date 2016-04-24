@@ -1,5 +1,6 @@
 package org.tondo.elections.pojo;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -10,8 +11,19 @@ import java.util.List;
 public class Party {
 
 	private String name;
-	
 	private List<Member> members;
+	
+	/**
+	 * For deserialization usage
+	 */
+	public Party() {
+		
+	}
+	
+	public Party(String name, List<Member> members) {
+		this.name = name;
+		this.members = new ArrayList<>(members);
+	}
 	
 	public String getName() {
 		return name;
