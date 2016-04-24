@@ -1,62 +1,2647 @@
-[
-  {
-    "name" : "Zelená strana",
-    "members" : [
-      {
-        "name" : "Peter",
-        "surname" : "Slovák",
-        "gender" : "M",
-        "birth" : "1980-05-14",
-        "chairman" : true
-      },
-      {
-        "name" : "Ivan",
-        "surname" : "Hruška",
-        "gender" : "M",
-        "birth" : "1983-11-25"
-      },
-      {
-        "name" : "Lucia",
-        "surname" : "Pobehlá",
-        "gender" : "F",
-        "birth" : "1988-01-09"
-      },
-      {
-        "name" : "Katarína",
-        "surname" : "Smutná",
-        "gender" : "F",
-        "birth" : "1975-01-22"
-      }
-    ]
-  },
-  {
-    "name" : "Strana zelených",
-    "members" : [
-      {
-        "name" : "Pavlína",
-        "surname" : "Rohožková",
-        "gender" : "F",
-        "birth" : "1985-07-09",
-        "chairman" : true
-      },
-      {
-        "name" : "Petra",
-        "surname" : "Papúchová",
-        "gender" : "F",
-        "birth" : "1984-07-24"
-      },
-      {
-        "name" : "Romana",
-        "surname" : "Fekete",
-        "gender" : "F",
-        "birth" : "1960-12-17"
-      },
-      {
-        "name" : "Karol",
-        "surname" : "Fekete",
-        "gender" : "M",
-        "birth" : "1958-03-17"
-      },
-    ]
-  }
-]
+[ {
+  "name" : "Gamers",
+  "members" : [ {
+    "name" : "Elvíra",
+    "surname" : "Warren",
+    "birth" : 750418291691,
+    "chairman" : true,
+    "gender" : "F"
+  }, {
+    "name" : "Denisa",
+    "surname" : "Vane",
+    "birth" : -193760908309,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Hermína",
+    "surname" : "Graham",
+    "birth" : 330078691691,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Sidónia",
+    "surname" : "Roberts",
+    "birth" : -137255308309,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Albert",
+    "surname" : "Dunkin",
+    "birth" : 506079091691,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Dalibor",
+    "surname" : "Barrick",
+    "birth" : 540552691691,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Gizela",
+    "surname" : "Young",
+    "birth" : 828865891691,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Medard",
+    "surname" : "Wilkin",
+    "birth" : -319127308309,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Ivica",
+    "surname" : "Enos",
+    "birth" : -491927308309,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Anabela",
+    "surname" : "Brun",
+    "birth" : 766312291691,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Sláva",
+    "surname" : "Brun",
+    "birth" : -287072908309,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Dobroslava",
+    "surname" : "Elwood",
+    "birth" : 766485091691,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Michaela",
+    "surname" : "Fassett",
+    "birth" : 748686691692,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Dorota",
+    "surname" : "Horton",
+    "birth" : 256555891692,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Malvína",
+    "surname" : "Crone",
+    "birth" : 278328691692,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Xénia",
+    "surname" : "Alkire",
+    "birth" : -385828108308,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Zdenka",
+    "surname" : "Grow",
+    "birth" : 241781491692,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Pravoslav",
+    "surname" : "Holt",
+    "birth" : -189008908308,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Želmíra",
+    "surname" : "Berry",
+    "birth" : -375892108308,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Judita",
+    "surname" : "Hawkins",
+    "birth" : 554545891692,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Marek",
+    "surname" : "Holbert",
+    "birth" : 268392691692,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Augustín",
+    "surname" : "Murphy",
+    "birth" : -585325708308,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Maroš",
+    "surname" : "Atterbury",
+    "birth" : 895221091692,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Jaroslava",
+    "surname" : "Hawke",
+    "birth" : 233141491692,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Matúš",
+    "surname" : "Elkin",
+    "birth" : -204733708308,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Nataša",
+    "surname" : "Harrison",
+    "birth" : 789298291692,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Stela",
+    "surname" : "Clark",
+    "birth" : 337595491692,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Zlatko",
+    "surname" : "Harrison",
+    "birth" : -108397708308,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Sofia",
+    "surname" : "Williamson",
+    "birth" : -383927308308,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Simona",
+    "surname" : "Rice",
+    "birth" : 624360691692,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Vladimíra",
+    "surname" : "Frost",
+    "birth" : 646129891692,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Margita",
+    "surname" : "Singley",
+    "birth" : 338027491692,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Víťazoslav",
+    "surname" : "Hunter",
+    "birth" : -166199308307,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Dalibor",
+    "surname" : "Rickman",
+    "birth" : -482336908307,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Izabela",
+    "surname" : "Page",
+    "birth" : 221909491693,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Ingrida",
+    "surname" : "Dyer",
+    "birth" : 739701091693,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Zita",
+    "surname" : "Knight",
+    "birth" : -3335308307,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Ružena",
+    "surname" : "Hertzler",
+    "birth" : 555323491693,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Hermína",
+    "surname" : "Gates",
+    "birth" : 257851891693,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Rastislav",
+    "surname" : "Brownfield",
+    "birth" : 86779891693,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Vasil",
+    "surname" : "Rickman",
+    "birth" : -243527308307,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Gregor",
+    "surname" : "Wyant",
+    "birth" : -206029708307,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Daniela",
+    "surname" : "Flesher",
+    "birth" : 518862691693,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Alena",
+    "surname" : "Weis",
+    "birth" : -107101708307,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Dana",
+    "surname" : "Higton",
+    "birth" : 45653491693,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Alfonz",
+    "surname" : "Miller",
+    "birth" : -476807308307,
+    "chairman" : false,
+    "gender" : "M"
+  } ]
+}, {
+  "name" : "Muzikanti",
+  "members" : [ {
+    "name" : "Roman",
+    "surname" : "Bentz",
+    "birth" : 264245491694,
+    "chairman" : true,
+    "gender" : "M"
+  }, {
+    "name" : "Marek",
+    "surname" : "Mills",
+    "birth" : 650709091694,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Ignác",
+    "surname" : "Greenway",
+    "birth" : -262189708306,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Félix",
+    "surname" : "Elkin",
+    "birth" : 160479091694,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Alica",
+    "surname" : "Tappan",
+    "birth" : -280506508306,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Belo",
+    "surname" : "Newman",
+    "birth" : 519985891694,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Ľubor",
+    "surname" : "Mccool",
+    "birth" : 645093091694,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Jerguš",
+    "surname" : "Mauney",
+    "birth" : 852975091694,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Berta",
+    "surname" : "Mcmaster",
+    "birth" : 33903091694,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Amália",
+    "surname" : "Sawin",
+    "birth" : -438791308306,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Branislava",
+    "surname" : "Porter",
+    "birth" : 1503091694,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Kristián",
+    "surname" : "Hubbard",
+    "birth" : 530616691694,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Helena",
+    "surname" : "Longfellow",
+    "birth" : 600255091694,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Hedviga",
+    "surname" : "Bowman",
+    "birth" : -199549708306,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Ema",
+    "surname" : "Harper",
+    "birth" : -624551308306,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Bartolomej",
+    "surname" : "Byrnes",
+    "birth" : 562584691694,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Vincent",
+    "surname" : "Briggs",
+    "birth" : -366733708306,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Perla",
+    "surname" : "Fuller",
+    "birth" : -625674508306,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Angela",
+    "surname" : "Doucet",
+    "birth" : -456071308305,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Alžbeta",
+    "surname" : "Hull",
+    "birth" : -173284108305,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Zoltán",
+    "surname" : "Cobb",
+    "birth" : 667215091695,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Anton",
+    "surname" : "Mockford",
+    "birth" : 871029091695,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Gašpar",
+    "surname" : "Kile",
+    "birth" : -252340108305,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Marianna",
+    "surname" : "Clemmons",
+    "birth" : -423325708305,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Samuel",
+    "surname" : "Eaton",
+    "birth" : 520158691695,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Zuzana",
+    "surname" : "Ellis",
+    "birth" : 68981491695,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Marek",
+    "surname" : "Gannon",
+    "birth" : 495880291695,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Bernard",
+    "surname" : "Downe",
+    "birth" : 468322291695,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Libuša",
+    "surname" : "Elkin",
+    "birth" : 517307491695,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Viktor",
+    "surname" : "Henry",
+    "birth" : -161274508305,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Maximilián",
+    "surname" : "Kuhns",
+    "birth" : -176394508305,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Frederik",
+    "surname" : "Dean",
+    "birth" : -279296908305,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Branislav",
+    "surname" : "Morris",
+    "birth" : 324808291695,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Petronela",
+    "surname" : "Watson",
+    "birth" : -178295308305,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Soňa",
+    "surname" : "Shigley",
+    "birth" : 46258291695,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Móric",
+    "surname" : "Wigley",
+    "birth" : -429546508305,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Renáta",
+    "surname" : "Henry",
+    "birth" : -311869708305,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Blažena",
+    "surname" : "Cobb",
+    "birth" : 861438691695,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Karolína",
+    "surname" : "Coleman",
+    "birth" : 463134691695,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Václav",
+    "surname" : "Knight",
+    "birth" : -55952908305,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Dušana",
+    "surname" : "Carr",
+    "birth" : 367835491696,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Etela",
+    "surname" : "Brooks",
+    "birth" : 22152691696,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Bohuslava",
+    "surname" : "Barber",
+    "birth" : -565108108304,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Branislava",
+    "surname" : "Critchfield",
+    "birth" : -210004108304,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Svetozár",
+    "surname" : "Haseltine",
+    "birth" : -135786508304,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Eduard",
+    "surname" : "Jeans",
+    "birth" : 894702691696,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Viktor",
+    "surname" : "Black",
+    "birth" : -405095308304,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Gašpar",
+    "surname" : "Counties",
+    "birth" : -351959308304,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Juraj",
+    "surname" : "Little",
+    "birth" : 178104691696,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Stanislav",
+    "surname" : "Sanders",
+    "birth" : -189095308304,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Margita",
+    "surname" : "Chase",
+    "birth" : -519229708304,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Michaela",
+    "surname" : "Ross",
+    "birth" : -516378508304,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Dobromila",
+    "surname" : "Musgrove",
+    "birth" : -564935308304,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Bohdana",
+    "surname" : "Griffin",
+    "birth" : -339863308304,
+    "chairman" : false,
+    "gender" : "F"
+  } ]
+}, {
+  "name" : "Strana Zelených",
+  "members" : [ {
+    "name" : "Andrej,",
+    "surname" : "Kephart",
+    "birth" : -616948108304,
+    "chairman" : true,
+    "gender" : "M"
+  }, {
+    "name" : "Stela",
+    "surname" : "Sutter",
+    "birth" : -19664908304,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Blažena",
+    "surname" : "Camville",
+    "birth" : 10143091696,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Ľudomila",
+    "surname" : "Owain",
+    "birth" : -420992908304,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Barbora",
+    "surname" : "Murray",
+    "birth" : -373472908304,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Ružena",
+    "surname" : "Marshall",
+    "birth" : -207584908304,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Regína",
+    "surname" : "Richardson",
+    "birth" : 909653491696,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Regína",
+    "surname" : "Gavin",
+    "birth" : -477239308303,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Gabriela",
+    "surname" : "Andrews",
+    "birth" : 163589491697,
+    "chairman" : false,
+    "gender" : "F"
+  } ]
+}, {
+  "name" : "Modrý svet",
+  "members" : [ {
+    "name" : "Ervín",
+    "surname" : "Rickman",
+    "birth" : -138032908303,
+    "chairman" : true,
+    "gender" : "M"
+  }, {
+    "name" : "Leopold",
+    "surname" : "Rose",
+    "birth" : 750072691697,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Andrej,",
+    "surname" : "Jenkins",
+    "birth" : -79626508303,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Eugen",
+    "surname" : "Ewell",
+    "birth" : 414063091697,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Antónia",
+    "surname" : "Badgley",
+    "birth" : -199117708303,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Samuel",
+    "surname" : "Mirick",
+    "birth" : 909045091697,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Ľubomír",
+    "surname" : "Anderson",
+    "birth" : 245151091697,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Vanda",
+    "surname" : "Bush",
+    "birth" : -145204108303,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Lívia",
+    "surname" : "Gorby",
+    "birth" : 39951091697,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Žaneta",
+    "surname" : "West",
+    "birth" : 904206691697,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Tamara",
+    "surname" : "Kimball",
+    "birth" : -548692108303,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Otília",
+    "surname" : "Boyd",
+    "birth" : -571674508303,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Eliška",
+    "surname" : "Nielson",
+    "birth" : -404404108303,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Antónia",
+    "surname" : "Snelling",
+    "birth" : 460110691697,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Branislava",
+    "surname" : "Bowen",
+    "birth" : 109243891697,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Elena",
+    "surname" : "Doucet",
+    "birth" : 390299491697,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Katarína",
+    "surname" : "Taylor",
+    "birth" : 361960291697,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Aurélia",
+    "surname" : "Howard",
+    "birth" : -626106508302,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Ingrida",
+    "surname" : "Parsons",
+    "birth" : 438859891698,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Svetozár",
+    "surname" : "Ludlam",
+    "birth" : 685873891698,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Gustáv",
+    "surname" : "Katz",
+    "birth" : 800094691698,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Zina",
+    "surname" : "Faris",
+    "birth" : 677925091698,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Uršuľa",
+    "surname" : "Ten Eyck",
+    "birth" : -497111308302,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Gašpar",
+    "surname" : "Stone",
+    "birth" : 486289891698,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Dezider",
+    "surname" : "Hudson",
+    "birth" : 714299491698,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Augustín",
+    "surname" : "Stuart",
+    "birth" : 588501091698,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Alexej",
+    "surname" : "Bruen",
+    "birth" : 613125091698,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Vít",
+    "surname" : "Routh",
+    "birth" : 194520691698,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Jolana",
+    "surname" : "Whitney",
+    "birth" : 585217891698,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Elena",
+    "surname" : "Parker",
+    "birth" : -523895308302,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Florián",
+    "surname" : "Alkire",
+    "birth" : 679566691698,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Bernard",
+    "surname" : "Cheyne",
+    "birth" : 782559091698,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Jela",
+    "surname" : "Gavin",
+    "birth" : -434039308302,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Oľga",
+    "surname" : "Graves",
+    "birth" : 581589091698,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Gabriel",
+    "surname" : "Lovering",
+    "birth" : -558023308302,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Benjamín",
+    "surname" : "Byrnes",
+    "birth" : 581934691698,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Milica",
+    "surname" : "Patterson",
+    "birth" : -496160908301,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Vanda",
+    "surname" : "Vane",
+    "birth" : 860401891699,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Petra",
+    "surname" : "Deckard",
+    "birth" : -530980108301,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Ľubica",
+    "surname" : "Hegeman",
+    "birth" : 89458291699,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Sláva",
+    "surname" : "Wine",
+    "birth" : 147519091699,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Branislav",
+    "surname" : "Bratcher",
+    "birth" : 15586291699,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Víťazoslav",
+    "surname" : "Mckim",
+    "birth" : 470223091699,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Martina",
+    "surname" : "Nielson",
+    "birth" : -566576908301,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Milan",
+    "surname" : "Shaw",
+    "birth" : 234869491699,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Etela",
+    "surname" : "Graham",
+    "birth" : 516270691699,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Anabela",
+    "surname" : "Hall",
+    "birth" : -464279308301,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Gabriela",
+    "surname" : "Sherman",
+    "birth" : -76602508301,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Dušana",
+    "surname" : "Greenway",
+    "birth" : -383322508301,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Agáta",
+    "surname" : "Stephens",
+    "birth" : 751627891700,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Bohdana",
+    "surname" : "Mitchell",
+    "birth" : -486397708300,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Norbert",
+    "surname" : "Butler",
+    "birth" : 463653091700,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Bronislava",
+    "surname" : "Simpson",
+    "birth" : -213978508300,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Nadežda",
+    "surname" : "Barton",
+    "birth" : -168532108300,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Agáta",
+    "surname" : "Dixon",
+    "birth" : -356797708300,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Martina",
+    "surname" : "Brown",
+    "birth" : 149419891700,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Andrea",
+    "surname" : "Chesebro",
+    "birth" : -385655308300,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Roland",
+    "surname" : "Gorby",
+    "birth" : -588781708300,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Sidónia",
+    "surname" : "Mullins",
+    "birth" : 358158691700,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Dezider",
+    "surname" : "Weaver",
+    "birth" : -102090508300,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Marek",
+    "surname" : "Picou",
+    "birth" : 451816291700,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Iveta",
+    "surname" : "Dehaven",
+    "birth" : -591719308300,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Emanuel",
+    "surname" : "Tuggle",
+    "birth" : 310210291700,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Móric",
+    "surname" : "Frothingham",
+    "birth" : -266423308299,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Branislav",
+    "surname" : "Spradlin",
+    "birth" : 43320691701,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Ivan",
+    "surname" : "Howe",
+    "birth" : 521800291701,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Róbert",
+    "surname" : "Cramp",
+    "birth" : 390472291701,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Rozália",
+    "surname" : "Kimes",
+    "birth" : -144080908299,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Dobroslav",
+    "surname" : "Dehaven",
+    "birth" : 248779891701,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Alojz",
+    "surname" : "Elwood",
+    "birth" : -258906508299,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Margaréta",
+    "surname" : "Bryant",
+    "birth" : 506338291701,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Ivana",
+    "surname" : "Harris",
+    "birth" : -463760908299,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Dušana",
+    "surname" : "Eaton",
+    "birth" : -305130508299,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Žofia",
+    "surname" : "Bennett",
+    "birth" : -58976908299,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Bohumil",
+    "surname" : "Burton",
+    "birth" : 616408291701,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Dobroslav",
+    "surname" : "Barrick",
+    "birth" : -574352908299,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Drahoslava",
+    "surname" : "Kimes",
+    "birth" : 262085491701,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Zlatica",
+    "surname" : "Ethridge",
+    "birth" : 785669491701,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Marián",
+    "surname" : "Skiff",
+    "birth" : -16468108299,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Barbora",
+    "surname" : "Gourley",
+    "birth" : -302192908299,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Ľuboslav",
+    "surname" : "Lyford",
+    "birth" : 549707491701,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Lívia",
+    "surname" : "Wolverton",
+    "birth" : -572624908299,
+    "chairman" : false,
+    "gender" : "F"
+  } ]
+}, {
+  "name" : "Pontónový most",
+  "members" : [ {
+    "name" : "Kornel",
+    "surname" : "Rickman",
+    "birth" : -325002508299,
+    "chairman" : true,
+    "gender" : "M"
+  }, {
+    "name" : "Beňadik",
+    "surname" : "Bailey",
+    "birth" : 130239091702,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Viktória",
+    "surname" : "Bates",
+    "birth" : 785151091702,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Mária",
+    "surname" : "Price",
+    "birth" : 557224291702,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Liana",
+    "surname" : "Ten Eyck",
+    "birth" : -421252108298,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Vanda",
+    "surname" : "Lindsley",
+    "birth" : -621095308298,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Belo",
+    "surname" : "Williams",
+    "birth" : -214410508298,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Tomáš",
+    "surname" : "Todd",
+    "birth" : -496592908298,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Nina",
+    "surname" : "Hicks",
+    "birth" : 273749491702,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Zlatko",
+    "surname" : "Nicol",
+    "birth" : 64143091702,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Emil",
+    "surname" : "Palmer",
+    "birth" : 893665891702,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Zoltán",
+    "surname" : "Sebring",
+    "birth" : -257956108298,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Gertrúda",
+    "surname" : "Paton",
+    "birth" : 118143091702,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Iľja",
+    "surname" : "Ross",
+    "birth" : -2730508298,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Miroslav",
+    "surname" : "Hunter",
+    "birth" : -156954508298,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Bohuslav",
+    "surname" : "Walker",
+    "birth" : -480263308298,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Eugénia",
+    "surname" : "Turcotte",
+    "birth" : 511435891702,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Henrich",
+    "surname" : "Baumgardner",
+    "birth" : 312629491702,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Magdaléna",
+    "surname" : "Nelson",
+    "birth" : 584094691702,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Renáta",
+    "surname" : "Ewell",
+    "birth" : -365610508298,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Václav",
+    "surname" : "Elliott",
+    "birth" : -192724108298,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Edita",
+    "surname" : "Gould",
+    "birth" : 652869091702,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Alexej",
+    "surname" : "Clarke",
+    "birth" : -533312908298,
+    "chairman" : false,
+    "gender" : "M"
+  } ]
+}, {
+  "name" : "Kopáčska strana",
+  "members" : [ {
+    "name" : "Dobromila",
+    "surname" : "Wyant",
+    "birth" : -325175308297,
+    "chairman" : true,
+    "gender" : "F"
+  }, {
+    "name" : "Dionýz",
+    "surname" : "Bailey",
+    "birth" : 111231091703,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Vanesa",
+    "surname" : "Bennett",
+    "birth" : 4699891703,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Božidara",
+    "surname" : "Overholt",
+    "birth" : 622805491703,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Gašpar",
+    "surname" : "Bayne",
+    "birth" : 835000291703,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Bibiána",
+    "surname" : "Timberlake",
+    "birth" : 480418291703,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Levoslav",
+    "surname" : "Hertzler",
+    "birth" : 81336691703,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Marcel",
+    "surname" : "Fisher",
+    "birth" : 636888691703,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Brigita",
+    "surname" : "Warner",
+    "birth" : 121685491703,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Jarolím",
+    "surname" : "Wickes",
+    "birth" : 438946291703,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Albín",
+    "surname" : "Bowman",
+    "birth" : 455099491703,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Denisa",
+    "surname" : "Wallace",
+    "birth" : 760699891703,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Paulína",
+    "surname" : "Hughes",
+    "birth" : 544955491703,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Radoslav",
+    "surname" : "Pogue",
+    "birth" : -72023308297,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Zoja",
+    "surname" : "Zabriskie",
+    "birth" : -124554508297,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Marcel",
+    "surname" : "Marsh",
+    "birth" : -607616908297,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Zina",
+    "surname" : "Harrington",
+    "birth" : -549469708297,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Nina",
+    "surname" : "Poynings",
+    "birth" : 580725091703,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Mária",
+    "surname" : "Moore",
+    "birth" : 532863091703,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Bohumír",
+    "surname" : "Gunderson",
+    "birth" : -517069708297,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Jerguš",
+    "surname" : "Gardner",
+    "birth" : -117210508297,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Viliam",
+    "surname" : "Beaudoin",
+    "birth" : 751714291704,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Františka",
+    "surname" : "Bannon",
+    "birth" : -541780108296,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Vanda",
+    "surname" : "Bowman",
+    "birth" : 262344691704,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Ján",
+    "surname" : "Chatham",
+    "birth" : 348399091704,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Rastislav",
+    "surname" : "Nelson",
+    "birth" : -321546508296,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Kornel",
+    "surname" : "Kessinger",
+    "birth" : -553012108296,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Žofia",
+    "surname" : "Carter",
+    "birth" : 764674291704,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Gregor",
+    "surname" : "Bethune",
+    "birth" : 637839091704,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Augustín",
+    "surname" : "Glazier",
+    "birth" : -36858508296,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Vladimír",
+    "surname" : "Grundy",
+    "birth" : -400429708296,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Uršuľa",
+    "surname" : "Usa",
+    "birth" : 309864691704,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Hilda",
+    "surname" : "Longfellow",
+    "birth" : -401120908296,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Zdenko",
+    "surname" : "Flesher",
+    "birth" : -264263308296,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Cyril",
+    "surname" : "King",
+    "birth" : -617293708296,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Miloslav",
+    "surname" : "Hubbard",
+    "birth" : 34162291704,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Pankrác",
+    "surname" : "Poskitt",
+    "birth" : 658575091704,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Henrich",
+    "surname" : "Cramp",
+    "birth" : 352891891704,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Aleš",
+    "surname" : "Zabriskie",
+    "birth" : 839320291704,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Vlastimil",
+    "surname" : "Roop",
+    "birth" : -321287308296,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Bystrík",
+    "surname" : "Carter",
+    "birth" : 642933091704,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Nataša",
+    "surname" : "Lord",
+    "birth" : 402744691704,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Henrich",
+    "surname" : "Case",
+    "birth" : 367230691705,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Ľudmila",
+    "surname" : "Fisher",
+    "birth" : 91877491705,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Margita",
+    "surname" : "White",
+    "birth" : -279383308295,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Vlastimil",
+    "surname" : "Price",
+    "birth" : 235819891705,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Žaneta",
+    "surname" : "Chinn",
+    "birth" : 348053491705,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Alfréd",
+    "surname" : "Eacott",
+    "birth" : -38845708295,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Milada",
+    "surname" : "Buckles",
+    "birth" : -209226508295,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Aurel",
+    "surname" : "Cooper",
+    "birth" : 514629091705,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Ferdinand",
+    "surname" : "Oliver",
+    "birth" : -573834508295,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Gustáv",
+    "surname" : "Snelling",
+    "birth" : 385119091705,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Gregor",
+    "surname" : "Arbogast",
+    "birth" : 357640291705,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Terézia",
+    "surname" : "Peters",
+    "birth" : -42906508295,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Gregor",
+    "surname" : "Walker",
+    "birth" : 94901491705,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Martina",
+    "surname" : "French",
+    "birth" : -113840908295,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Zdenko",
+    "surname" : "Ray",
+    "birth" : 822475891705,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Linda",
+    "surname" : "Hatley",
+    "birth" : -334247308295,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Štefánia",
+    "surname" : "Gunderson",
+    "birth" : 222168691705,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Karina",
+    "surname" : "Overholt",
+    "birth" : -587831308295,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Dušan",
+    "surname" : "Nielson",
+    "birth" : -84205708295,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Boleslav",
+    "surname" : "Atterbury",
+    "birth" : -20615308295,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Stanislav",
+    "surname" : "Peck",
+    "birth" : 412162291706,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Petra",
+    "surname" : "Stafford",
+    "birth" : 288696691706,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Danica",
+    "surname" : "Emmert",
+    "birth" : -147277708294,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Drahomíra",
+    "surname" : "Yorke",
+    "birth" : -117124108294,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Erik",
+    "surname" : "Dudding",
+    "birth" : -272212108294,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Slavomír",
+    "surname" : "Bradford",
+    "birth" : -84810508294,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Móric",
+    "surname" : "Rickman",
+    "birth" : 296814691706,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Elvíra",
+    "surname" : "Crone",
+    "birth" : -146672908294,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Bohuslava",
+    "surname" : "Dyer",
+    "birth" : -471796108294,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Svätopluk",
+    "surname" : "Little",
+    "birth" : 127647091706,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Peter",
+    "surname" : "Hammond",
+    "birth" : 23535091706,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Oleg",
+    "surname" : "Barton",
+    "birth" : 429697891706,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Radoslav",
+    "surname" : "Oliver",
+    "birth" : 60082291706,
+    "chairman" : false,
+    "gender" : "M"
+  } ]
+}, {
+  "name" : "Pracovití ľudia",
+  "members" : [ {
+    "name" : "Irena",
+    "surname" : "Stevens",
+    "birth" : -548951308294,
+    "chairman" : true,
+    "gender" : "F"
+  }, {
+    "name" : "Jarmila",
+    "surname" : "Jr",
+    "birth" : -265300108294,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Lea",
+    "surname" : "Stewart",
+    "birth" : -278519308294,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Elvíra",
+    "surname" : "Bryant",
+    "birth" : 299665891706,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Miloslava",
+    "surname" : "Chesebro",
+    "birth" : 46085491706,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Amália",
+    "surname" : "Broome",
+    "birth" : 652091491706,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Vladislav",
+    "surname" : "Shackleford",
+    "birth" : 683109091706,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Simona",
+    "surname" : "Hatley",
+    "birth" : 135336691706,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Zoja",
+    "surname" : "Reid",
+    "birth" : 78312691706,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Nina",
+    "surname" : "Case",
+    "birth" : 129029491706,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Alexander",
+    "surname" : "Peck",
+    "birth" : -314548108293,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Eleonóra",
+    "surname" : "Hammond",
+    "birth" : 47381491707,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Jozefína",
+    "surname" : "Hawkins",
+    "birth" : -541607308293,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Dorota",
+    "surname" : "Gunderson",
+    "birth" : 832667491707,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Nina",
+    "surname" : "Cumming",
+    "birth" : -58717708293,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Lenka",
+    "surname" : "Ruddock",
+    "birth" : -241626508293,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Ľubica",
+    "surname" : "Alkire",
+    "birth" : -616948108293,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Alena",
+    "surname" : "Ludlam",
+    "birth" : -208448908293,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Ján",
+    "surname" : "Cockburn",
+    "birth" : -543248908293,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Ignác",
+    "surname" : "Norton",
+    "birth" : 639091707,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Ľuboslava",
+    "surname" : "Mason",
+    "birth" : 488190691707,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Vanesa",
+    "surname" : "Gavin",
+    "birth" : 47899891707,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Ľudmila",
+    "surname" : "Chace",
+    "birth" : -522253708293,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Alžbeta",
+    "surname" : "Rhodes",
+    "birth" : -626106508293,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Gustáv",
+    "surname" : "Pangborn",
+    "birth" : 603711091707,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Zdenka",
+    "surname" : "Young",
+    "birth" : 228907891707,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Leonard",
+    "surname" : "Tuggle",
+    "birth" : 464344291707,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Ivan",
+    "surname" : "Priddy",
+    "birth" : 888917491707,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Bohuslav",
+    "surname" : "Cutts",
+    "birth" : 23189491707,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Drahomír",
+    "surname" : "Cumming",
+    "birth" : 422526691707,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Jolana",
+    "surname" : "Ford",
+    "birth" : -572884108293,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Adrián",
+    "surname" : "Cook",
+    "birth" : -353255308293,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Alexander",
+    "surname" : "Bonnett",
+    "birth" : 540725491707,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Stela",
+    "surname" : "Boys",
+    "birth" : 387016291707,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Arnold",
+    "surname" : "Cunningham",
+    "birth" : 382267891707,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Ervín",
+    "surname" : "Jaggers",
+    "birth" : 319887091708,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Dorota",
+    "surname" : "Hancock",
+    "birth" : 239967091708,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Hubert",
+    "surname" : "Lockett",
+    "birth" : -589472908292,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Vojtech",
+    "surname" : "Wigley",
+    "birth" : -501517708292,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Ingrida",
+    "surname" : "Horton",
+    "birth" : -227456908292,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Dagmara",
+    "surname" : "Foster",
+    "birth" : 127474291708,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Stanislav",
+    "surname" : "Wright",
+    "birth" : 734085091708,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Ivan",
+    "surname" : "Boots",
+    "birth" : -36599308292,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Kamil",
+    "surname" : "Burton",
+    "birth" : -178640908292,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Miroslava",
+    "surname" : "Llewellyn",
+    "birth" : 101554291708,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Filoména",
+    "surname" : "Essery",
+    "birth" : 580379491708,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Kamila",
+    "surname" : "Saxon",
+    "birth" : 604920691708,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Bystrík",
+    "surname" : "Greenway",
+    "birth" : 421403491708,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Zina",
+    "surname" : "Copple",
+    "birth" : -362586508292,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Lucia",
+    "surname" : "Pierce",
+    "birth" : 91531891708,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Slavomír",
+    "surname" : "Roberts",
+    "birth" : -174407308292,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Teodor",
+    "surname" : "Hambleton",
+    "birth" : 478431091708,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Sláva",
+    "surname" : "Bethune",
+    "birth" : 322219891708,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Perla",
+    "surname" : "Owain",
+    "birth" : 489659491708,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Žofia",
+    "surname" : "French",
+    "birth" : 122981491708,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Ľubica",
+    "surname" : "Hambleton",
+    "birth" : 459160291708,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Kristián",
+    "surname" : "Carnegie",
+    "birth" : 65007091708,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Bohuslava",
+    "surname" : "Saxon",
+    "birth" : 648030691708,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Rebeka",
+    "surname" : "Wilkin",
+    "birth" : -171642508292,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Denisa",
+    "surname" : "Fogle",
+    "birth" : 799230691708,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Bruno",
+    "surname" : "Powell",
+    "birth" : 519985891708,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Margaréta",
+    "surname" : "Corps",
+    "birth" : -235492108292,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Bystrík",
+    "surname" : "Pratt",
+    "birth" : -152634508291,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Miroslav",
+    "surname" : "Crawford",
+    "birth" : 89803891709,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Oleg",
+    "surname" : "Porter",
+    "birth" : 786101491709,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Jana",
+    "surname" : "Hancock",
+    "birth" : -100448908291,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Ladislav",
+    "surname" : "Graham",
+    "birth" : 899368291709,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Alojz",
+    "surname" : "Nevius",
+    "birth" : -83341708291,
+    "chairman" : false,
+    "gender" : "M"
+  } ]
+}, {
+  "name" : "Mládež Slovenska",
+  "members" : [ {
+    "name" : "Magdaléna",
+    "surname" : "Rhodes",
+    "birth" : 102072691709,
+    "chairman" : true,
+    "gender" : "F"
+  }, {
+    "name" : "Iveta",
+    "surname" : "Griffen",
+    "birth" : -154794508291,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Ignác",
+    "surname" : "Lindsley",
+    "birth" : 318418291709,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Ingrida",
+    "surname" : "Elgin",
+    "birth" : 849173491709,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Zita",
+    "surname" : "Harrison",
+    "birth" : 892974691709,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Aurélia",
+    "surname" : "Parsonage",
+    "birth" : -196352908291,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Drahoslava",
+    "surname" : "Simonson",
+    "birth" : -479399308291,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Zlatko",
+    "surname" : "Mcgovern",
+    "birth" : 254827891709,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Arpád",
+    "surname" : "Camden",
+    "birth" : 696331891709,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Iveta",
+    "surname" : "Howell",
+    "birth" : -138292108291,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Uršuľa",
+    "surname" : "Lindsley",
+    "birth" : -151770508291,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Miloslava",
+    "surname" : "Chace",
+    "birth" : 171624691709,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Lea",
+    "surname" : "Sebring",
+    "birth" : 276255091709,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Žofia",
+    "surname" : "Brun",
+    "birth" : -539101708291,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Víťazoslav",
+    "surname" : "Evilsizer",
+    "birth" : 496139491709,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Peter",
+    "surname" : "Jenkins",
+    "birth" : -430237708291,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Ingrida",
+    "surname" : "Bruce",
+    "birth" : -526573708291,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Vladislav",
+    "surname" : "Wyant",
+    "birth" : 619173091709,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Jarolím",
+    "surname" : "Hatley",
+    "birth" : 810981091709,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Bruno",
+    "surname" : "Lindsley",
+    "birth" : 738923491710,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Bohdana",
+    "surname" : "Bolinger",
+    "birth" : -294503308290,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Gabriel",
+    "surname" : "Dudding",
+    "birth" : 460110691710,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Zora",
+    "surname" : "Cooper",
+    "birth" : 529147891710,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Karol",
+    "surname" : "Fuller",
+    "birth" : 900750691710,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Júlia",
+    "surname" : "Cheyne",
+    "birth" : 43234291710,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Blahoslav",
+    "surname" : "Brownfield",
+    "birth" : 277378291710,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Félix",
+    "surname" : "Ethridge",
+    "birth" : 565349491710,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Ľuboslava",
+    "surname" : "Henderson",
+    "birth" : 726226291710,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Ľuboslava",
+    "surname" : "Timberlake",
+    "birth" : 795432691710,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Demeter",
+    "surname" : "Morrison",
+    "birth" : 580552291710,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Albína",
+    "surname" : "Hambleton",
+    "birth" : 201432691710,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Frederik",
+    "surname" : "Richards",
+    "birth" : 776939491710,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Branislav",
+    "surname" : "Warren",
+    "birth" : 631359091710,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Petronela",
+    "surname" : "Scarlett",
+    "birth" : -393949708290,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Kristián",
+    "surname" : "Jeans",
+    "birth" : 799749091710,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Tichomír",
+    "surname" : "Ewell",
+    "birth" : 80559091710,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Brigita",
+    "surname" : "Leek",
+    "birth" : 907144291710,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Ľuboslav",
+    "surname" : "Williams",
+    "birth" : -50596108290,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Roland",
+    "surname" : "Naugle",
+    "birth" : 89371891710,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Justína",
+    "surname" : "Cook",
+    "birth" : 389781091710,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Milan",
+    "surname" : "Hendershot",
+    "birth" : 340018291710,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Pravoslav",
+    "surname" : "Truelove",
+    "birth" : -386605708290,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Gizela",
+    "surname" : "Nichols",
+    "birth" : -376237708290,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Petronela",
+    "surname" : "Weis",
+    "birth" : -590509708290,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Bohuslava",
+    "surname" : "Little",
+    "birth" : 765966691710,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Gustáv",
+    "surname" : "Bigler",
+    "birth" : 731410291710,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Vanesa",
+    "surname" : "Fisher",
+    "birth" : 194952691710,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Blahoslav",
+    "surname" : "Crago",
+    "birth" : 152357491711,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Adolf",
+    "surname" : "Chinn",
+    "birth" : 21979891711,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Matúš",
+    "surname" : "England",
+    "birth" : 487153891711,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Vojtech",
+    "surname" : "Gardner",
+    "birth" : -510244108289,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Valentín",
+    "surname" : "Mockford",
+    "birth" : -327767308289,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Metod",
+    "surname" : "Owen",
+    "birth" : 584958691711,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Patrícia",
+    "surname" : "Webb",
+    "birth" : -487952908289,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Peter",
+    "surname" : "Bradley",
+    "birth" : 105442291711,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Slavomír",
+    "surname" : "Sharp",
+    "birth" : -524672908289,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Filip",
+    "surname" : "Hawke",
+    "birth" : 809339491711,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Bartolomej",
+    "surname" : "Page",
+    "birth" : -382372108289,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Dobroslav",
+    "surname" : "Colenso",
+    "birth" : 105615091711,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Marcel",
+    "surname" : "Sherman",
+    "birth" : -416759308289,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Miloslava",
+    "surname" : "Coleman",
+    "birth" : 893925091711,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Melinda",
+    "surname" : "Ball",
+    "birth" : -375719308289,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Ferdinand",
+    "surname" : "It",
+    "birth" : -333124108289,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Vilma",
+    "surname" : "Welling",
+    "birth" : -621700108289,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Milica",
+    "surname" : "Tunnell",
+    "birth" : -291652108289,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Servác",
+    "surname" : "Cox",
+    "birth" : -368807308289,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Sidónia",
+    "surname" : "Peoples",
+    "birth" : -371399308289,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Ľudomila",
+    "surname" : "Graves",
+    "birth" : -326039308289,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Matej",
+    "surname" : "Lindsley",
+    "birth" : 802081891711,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Dobroslava",
+    "surname" : "People",
+    "birth" : 275477491711,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Anastázia",
+    "surname" : "Henderson",
+    "birth" : -160928908289,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Berta",
+    "surname" : "Walker",
+    "birth" : -239207308289,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Eduard",
+    "surname" : "Simpson",
+    "birth" : -586621708289,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Leopold",
+    "surname" : "Olin",
+    "birth" : -343664908289,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Oleg",
+    "surname" : "Allen",
+    "birth" : 590056291711,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Jaroslava",
+    "surname" : "Saxon",
+    "birth" : 173698291711,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Miloš",
+    "surname" : "Cox",
+    "birth" : 421144291711,
+    "chairman" : false,
+    "gender" : "M"
+  }, {
+    "name" : "Dorota",
+    "surname" : "Sawyer",
+    "birth" : -200068108288,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Irma",
+    "surname" : "Barksdale",
+    "birth" : 735208291712,
+    "chairman" : false,
+    "gender" : "F"
+  }, {
+    "name" : "Fridrich",
+    "surname" : "Cook",
+    "birth" : 28027891712,
+    "chairman" : false,
+    "gender" : "M"
+  } ]
+} ]

@@ -22,5 +22,9 @@
   {
     "name" : "Prešov",
     "votersCoef" : 0.7
+  },
+  {
+    "name" : "Horná Dolná",
+    "votersCoef" : 0.08
   }
 ]
