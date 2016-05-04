@@ -8,6 +8,9 @@ import java.text.Normalizer;
 import java.text.Normalizer.Form;
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 import javax.ws.rs.ProcessingException;
 import javax.ws.rs.client.Client;
@@ -18,6 +21,8 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import org.glassfish.jersey.client.authentication.HttpAuthenticationFeature;
+import org.tondo.elections.database.DatabaseInitializationTask;
+import org.tondo.elections.database.InitializationConfig;
 import org.tondo.elections.pojo.Member;
 import org.tondo.elections.pojo.Party;
 import org.tondo.elections.pojo.Region;
@@ -36,12 +41,72 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class Elections {
 
 	public static void main(String[] args) throws FileNotFoundException, IOException {
-		ObjectMapper mapper = new ObjectMapper();
+		ObjectMapper jsonParser = new ObjectMapper();
+		
+		// load parties
+		List<Party> parties = null;
+		try (InputStream is = new FileInputStream("../parties.json")) {
+			parties = jsonParser.readValue(is, new TypeReference<List<Party>>() {
+			});
+		}
+		VotesGenerator votesGenerator = new VotesGenerator(parties);
 		
 		// load regions
 		List<Region> regions = null;
 		try (InputStream is = new FileInputStream("../regions.json")) {
-			regions = mapper.readValue(is, new TypeReference<List<Region>>() {});
+			regions = jsonParser.readValue(is, new TypeReference<List<Region>>() {});
+		}
+		
+		Client client = ClientBuilder.newClient();
+		WebTarget target = client.target("http://127.0.0.1:5984")
+				.register(HttpAuthenticationFeature.basic("tondodev", "tondodev"));
+		
+		InitializationConfig config = new InitializationConfig();
+		config.setBaseVotesCount(1000);
+		
+		ExecutorService dbInitExecutor = Executors.newCachedThreadPool();
+		for (Region region : regions) {
+			dbInitExecutor.execute(new DatabaseInitializationTask(region, target, votesGenerator, jsonParser, config));
+		}
+		
+		// needed for awaitTerminantion, because used pool is cached, and idle threads 
+		// are terminated after 60 seconds
+		dbInitExecutor.shutdown();
+		try {
+			System.out.println("waiting for termination!");
+			boolean normalTermination = dbInitExecutor.awaitTermination(100, TimeUnit.SECONDS);
+			System.out.println("Terminated! " + normalTermination);
+			if(!normalTermination) {
+				dbInitExecutor.shutdownNow();
+			}
+		} catch (InterruptedException e) {
+			// nothing to do
+		}
+	}
+	
+	private static String normalizeForDbName(String str) {
+		if (str == null || str.isEmpty()) {
+			return str;
+		}
+		
+		String[] nameParts = str.split("\\s+");
+		String dbName = "";
+		for (String part : nameParts) {
+			dbName += part;
+			
+		}
+		
+		return Normalizer.normalize(dbName, Form.NFD).replaceAll("[\\p{InCombiningDiacriticalMarks}]", "").toLowerCase();
+	}
+	
+	
+	public void proto() throws JsonParseException, JsonMappingException, IOException {
+		ObjectMapper jsonParser = new ObjectMapper();
+		
+		// load regions
+		List<Region> regions = null;
+		try (InputStream is = new FileInputStream("../regions.json")) {
+			regions = jsonParser.readValue(is, new TypeReference<List<Region>>() {});
 		}
 		
 		// for testing create DB only for one region
@@ -50,13 +115,12 @@ public class Elections {
 		// load parties
 		List<Party> parties = null;
 		try (InputStream is = new FileInputStream("../parties.json")) {
-			parties = mapper.readValue(is, new TypeReference<List<Party>>() {});
+			parties = jsonParser.readValue(is, new TypeReference<List<Party>>() {});
 		}
 		
 		VotesGenerator votesGenerator = new VotesGenerator(parties);
-		ObjectMapper jsonParser =  new ObjectMapper();
 		Client client = ClientBuilder.newClient();
-		WebTarget target = client.target("http://tondodev:tondodev@127.0.0.1:5984");
+		WebTarget target = client.target("http://127.0.0.1:5984");
 		for (Region r : regions) {
 			String regionDbName = normalizeForDbName(r.getName());
 			Response deleteResponse = null;
@@ -101,21 +165,6 @@ public class Elections {
 				System.out.println("vote response: " + voteResponse.readEntity(String.class));
 			}
 		}
-	}
-	
-	private static String normalizeForDbName(String str) {
-		if (str == null || str.isEmpty()) {
-			return str;
-		}
-		
-		String[] nameParts = str.split("\\s+");
-		String dbName = "";
-		for (String part : nameParts) {
-			dbName += part;
-			
-		}
-		
-		return Normalizer.normalize(dbName, Form.NFD).replaceAll("[\\p{InCombiningDiacriticalMarks}]", "").toLowerCase();
 	}
 	
 	public void tmp() throws JsonParseException, JsonMappingException, IOException {
