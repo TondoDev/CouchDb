@@ -21,6 +21,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import org.glassfish.jersey.client.authentication.HttpAuthenticationFeature;
+import org.tondo.elections.database.CouchDbConnection;
 import org.tondo.elections.database.DatabaseInitializationTask;
 import org.tondo.elections.database.InitializationConfig;
 import org.tondo.elections.pojo.Member;
@@ -60,13 +61,13 @@ public class Elections {
 		Client client = ClientBuilder.newClient();
 		WebTarget target = client.target("http://127.0.0.1:5984")
 				.register(HttpAuthenticationFeature.basic("tondodev", "tondodev"));
-		
+		CouchDbConnection connection = new CouchDbConnection(target, jsonParser);
 		InitializationConfig config = new InitializationConfig();
-		config.setBaseVotesCount(1000);
+		config.setBaseVotesCount(2000);
 		
 		ExecutorService dbInitExecutor = Executors.newCachedThreadPool();
 		for (Region region : regions) {
-			dbInitExecutor.execute(new DatabaseInitializationTask(region, target, votesGenerator, jsonParser, config));
+			dbInitExecutor.execute(new DatabaseInitializationTask(connection, region, votesGenerator, config));
 		}
 		
 		// needed for awaitTerminantion, because used pool is cached, and idle threads 

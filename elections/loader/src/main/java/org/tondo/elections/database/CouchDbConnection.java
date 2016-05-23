@@ -3,13 +3,13 @@ package org.tondo.elections.database;
 import java.io.IOException;
 import java.util.Map;
 
-import javax.ws.rs.ProcessingException;
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -45,7 +45,7 @@ public class CouchDbConnection {
 		}
 	}
 	
-	public CouchResult put(String resource, Object value) {
+	public CouchResult put(String resource, Object value) throws JsonProcessingException {
 		Response response = null;
 		try {
 			 response = target.path(resource)
@@ -54,9 +54,6 @@ public class CouchDbConnection {
 				.put(createJsonEntity(value));
 			 
 			return readResponse(response);
-		} catch(ProcessingException e) {
-			System.out.println("Can't POST resource " + resource + ", because " + e.getMessage());
-			return null;
 		} finally {
 			if (response != null) {
 				response.close();
@@ -64,7 +61,7 @@ public class CouchDbConnection {
 		}
 	}
 	
-	public CouchResult post(String resource, Object value) {
+	public CouchResult post(String resource, Object value) throws JsonProcessingException {
 		Response response = null;
 		try {
 			response = target.path(resource)
@@ -72,9 +69,6 @@ public class CouchDbConnection {
 				.accept(MediaType.APPLICATION_JSON)
 				.post(createJsonEntity(value));
 			return readResponse(response);
-		} catch(ProcessingException e) {
-			System.out.println("Can't POST resource " + resource + ", because " + e.getMessage());
-			return null;
 		} finally {
 			if (response != null) {
 				response.close();
@@ -91,9 +85,6 @@ public class CouchDbConnection {
 					.delete();
 			
 			return readResponse(response);
-		} catch (ProcessingException e) {
-			System.out.println("Can't delete resource " + resource + ", because " + e.getMessage());
-			return null;
 		} finally {
 			if (response != null) {
 				response.close();
@@ -101,10 +92,13 @@ public class CouchDbConnection {
 		}
 	}
 	
-	private Entity<?> createJsonEntity(Object value) {
-		String json = null;
+	private Entity<?> createJsonEntity(Object value) throws JsonProcessingException {
+		// null can represent empty payload so empty string is send (jersey desn't accept null)
+		String json = "";
 		if (value instanceof String) {
 			json = (String) value;
+		} else if (value != null) {
+			json = parser.writeValueAsString(value);
 		}
 		
 		return Entity.entity(json, MediaType.APPLICATION_JSON);
