@@ -14,9 +14,9 @@ import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
 
 import org.glassfish.jersey.client.authentication.HttpAuthenticationFeature;
+import org.tondo.elections.config.ElectionsConfiguration;
 import org.tondo.elections.database.CouchDbConnection;
 import org.tondo.elections.database.DatabaseInitializationTask;
-import org.tondo.elections.database.InitializationConfig;
 import org.tondo.elections.pojo.Party;
 import org.tondo.elections.pojo.Region;
 
@@ -46,17 +46,17 @@ public class Elections {
 		try (InputStream is = new FileInputStream("../regions.json")) {
 			regions = jsonParser.readValue(is, new TypeReference<List<Region>>() {});
 		}
-		
+
+		ElectionsConfiguration configuration = new ElectionsConfiguration();
+		configuration.load("dbconf.properties");
 		Client client = ClientBuilder.newClient();
 		WebTarget target = client.target("http://127.0.0.1:5984")
 				.register(HttpAuthenticationFeature.basic("tondodev", "tondodev"));
 		CouchDbConnection connection = new CouchDbConnection(target, jsonParser);
-		InitializationConfig config = new InitializationConfig();
-		config.setBaseVotesCount(2000);
 		
 		ExecutorService dbInitExecutor = Executors.newCachedThreadPool();
 		for (Region region : regions) {
-			dbInitExecutor.execute(new DatabaseInitializationTask(connection, region, votesGenerator, config));
+			dbInitExecutor.execute(new DatabaseInitializationTask(connection, region, votesGenerator, configuration.getVotesCount()));
 		}
 		
 		// needed for awaitTerminantion, because used pool is cached, and idle threads 

@@ -15,13 +15,13 @@ public class DatabaseInitializationTask implements Runnable {
 	
 	private Region region;
 	private VotesGenerator generator;
-	private InitializationConfig config;
+	private int votesBase;
 	private CouchDbConnection connection;
 	
-	public DatabaseInitializationTask(CouchDbConnection con, Region region, VotesGenerator generator, InitializationConfig config) {
+	public DatabaseInitializationTask(CouchDbConnection con, Region region, VotesGenerator generator, int votesBase) {
 		this.region = region;
 		this.generator = generator;
-		this.config = config;
+		this.votesBase = votesBase;
 		this.connection = con;
 	}
 
@@ -47,7 +47,7 @@ public class DatabaseInitializationTask implements Runnable {
 			return;
 		}
 		
-		int numberOfVotes = (int)Math.ceil(region.getVotersCoef()*config.getBaseVotesCount());
+		int numberOfVotes = (int)Math.ceil(region.getVotersCoef()*this.votesBase);
 		for (int i = 0; i < numberOfVotes && !Thread.interrupted(); i++) {
 			Vote vote = generator.generateVote();
 			try {
