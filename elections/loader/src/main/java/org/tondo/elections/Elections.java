@@ -9,13 +9,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-import javax.ws.rs.client.Client;
-import javax.ws.rs.client.ClientBuilder;
-import javax.ws.rs.client.WebTarget;
-
-import org.glassfish.jersey.client.authentication.HttpAuthenticationFeature;
 import org.tondo.elections.config.ElectionsConfiguration;
-import org.tondo.elections.database.CouchDbConnection;
+import org.tondo.elections.database.CouchDbConnectionFactory;
 import org.tondo.elections.database.DatabaseInitializationTask;
 import org.tondo.elections.pojo.Party;
 import org.tondo.elections.pojo.Region;
@@ -49,14 +44,11 @@ public class Elections {
 
 		ElectionsConfiguration configuration = new ElectionsConfiguration();
 		configuration.load("dbconf.properties");
-		Client client = ClientBuilder.newClient();
-		WebTarget target = client.target("http://127.0.0.1:5984")
-				.register(HttpAuthenticationFeature.basic("tondodev", "tondodev"));
-		CouchDbConnection connection = new CouchDbConnection(target, jsonParser);
-		
+
+		CouchDbConnectionFactory connectionFactory = new CouchDbConnectionFactory(configuration);
 		ExecutorService dbInitExecutor = Executors.newCachedThreadPool();
 		for (Region region : regions) {
-			dbInitExecutor.execute(new DatabaseInitializationTask(connection, region, votesGenerator, configuration.getVotesCount()));
+			dbInitExecutor.execute(new DatabaseInitializationTask(connectionFactory.getConnection(), region, votesGenerator, configuration.getVotesCount()));
 		}
 		
 		// needed for awaitTerminantion, because used pool is cached, and idle threads 
