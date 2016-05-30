@@ -1,11 +1,16 @@
 package org.tondo.elections.database;
 
+import java.io.IOException;
+import java.nio.file.Paths;
 import java.text.Normalizer;
 import java.text.Normalizer.Form;
+import java.util.List;
 
 import javax.ws.rs.ProcessingException;
 
 import org.tondo.elections.VotesGenerator;
+import org.tondo.elections.designdoc.DesignDocFileSystemLoader;
+import org.tondo.elections.designdoc.DesignDocument;
 import org.tondo.elections.pojo.Region;
 import org.tondo.elections.pojo.Vote;
 
@@ -58,6 +63,27 @@ public class DatabaseInitializationTask implements Runnable {
 			} catch (ProcessingException | JsonProcessingException e) {
 				System.err.println("Can't create vote " + regionDbName + ", because " + e.getMessage());
 				return;
+			}
+		}
+		
+		String dbDesignLocation = Paths.get("..", "design", regionDbName).toString();
+		List<DesignDocument> designDocs = null;
+		try {
+			designDocs = new DesignDocFileSystemLoader(dbDesignLocation).load();
+		} catch (IOException e) {
+			System.err.println("Can't load design docs for database " + regionDbName + ", because " + e.getMessage());
+		}
+		
+		if (designDocs != null) {
+			for (DesignDocument doc : designDocs) {
+				try {
+					CouchResult designCreateResult = connection.put(regionDbName + "/_design/" + doc.getName(), doc.getContent());
+					if (designCreateResult.getStatus() != 201) {
+						System.err.println("Can't create design document " + doc.getName() + " in database " + regionDbName + ", because " + designCreateResult.getPayload());
+					}
+				} catch (ProcessingException| JsonProcessingException e) {
+					System.err.println("Can't create design document " + doc.getName() + " in database " + regionDbName + ", because " + e.getMessage());
+				}
 			}
 		}
 	}
