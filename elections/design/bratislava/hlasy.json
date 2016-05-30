@@ -1,0 +1,11 @@
+{
+  "language": "javascript",
+  "views": {
+    "regionCount": {
+      "map": "function(doc) {
+          emit(doc.partyName, 1)
+      }",
+      "reduce" : "_count"
+    }
+  }
+}
